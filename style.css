@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+  /* background: orange; */
+  position: relative;
+}
+
+.main-color {
+  color: rgb(81, 81, 135);
+}
+
+/* HEADER CSS */
+
+.main-header {
+  background: rgb(81, 81, 135);
+  color: rgb(218, 216, 216);
+  padding: 20px;
+}
+
+/* MAIN CONTENT CSS */
+
+.main-content {
+  width: 70%;
+  /* margin-bottom: 50px; */
+  float: left;
+  font-weight: 200;
+}
+
+.introduction {
+  /* font-weight: 200; */
+}
+
+.work-history {
+  text-align: center;
+  /* padding: 0 0 0 10px; */
+}
+
+.work-1 {
+  margin-bottom: 20px;
+  /* background-color: rgb(53, 51, 51); */
+}
+
+.year-info {
+  width: 15%;
+  float: left;
+  padding: 10px;
+}
+
+.working-details {
+  width: 80%;
+  float: right;
+}
+
+
+.clear {
+  clear: both;
+}
+
+/* SIDE BAR CSS */
+
+.side-bar {
+  width: 25%;
+  background: rgb(231, 229, 229);
+  float: right;
+}
+
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.star {
+  color: yellow;
+}
+
+
+/* FOOTER */
+
+.footer {
+  clear: both;
+  /* position: absolute;
+  bottom: 0; */
+  /* background-color: rgb(64, 205, 43); */
+}
+
+.copyright {
+  text-align: center;
+}
+
+
+
+
+
+
+.test {
+  background-color: red;
+}
