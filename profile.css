@@ -319,7 +319,7 @@ Main Section
 }
 
 .main-addition {
-  grid-template-columns: 35.2rem 2fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 .main .aside {
