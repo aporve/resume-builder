@@ -23,12 +23,20 @@
   padding: 20px;
 }
 
+/* Wrapper container  */
+
+.wraper-container {
+  display: flex;
+  gap: 30px;
+}
+
 /* MAIN CONTENT CSS */
 
 .main-content {
-  width: 70%;
+  flex: 1;
+  /* width: 70%; */
   /* margin-bottom: 50px; */
-  float: left;
+  /* float: left; */
   font-weight: 200;
 }
 
@@ -65,9 +73,10 @@
 /* SIDE BAR CSS */
 
 .side-bar {
-  width: 25%;
+  flex: 0 0 25%;
+  /* width: 25%; */
   background: rgb(231, 229, 229);
-  float: right;
+  /* float: right; */
 }
 
 .p-1 {
@@ -98,7 +107,7 @@
 /* FOOTER */
 
 .footer {
-  clear: both;
+  /* clear: both; */
   /* position: absolute;
   bottom: 0; */
   /* background-color: rgb(64, 205, 43); */
@@ -107,10 +116,6 @@
 .copyright {
   text-align: center;
 }
-
-
-
-
 
 
 .test {

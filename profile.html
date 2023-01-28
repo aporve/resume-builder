@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="profile.css">
+  <title>Profile</title>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <section class="nav-section">
+    <nav class="nav-grid">
+      <p class="logo">𝐑𝐄𝐒𝐔𝐌𝐄 𝐁𝐔𝐈𝐋𝐃𝐄𝐑</p>
+      <div class="hide" id="nav-menu">
+        <div class="nav-menu">
+          <a href="#">Home</a>
+          <a href="#">CV</a>
+          <a href="#">Contact User</a>
+          <a href="#" class="user-main-profile">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <div class="main main-grid" id="main">
+    <div class="aside hide" id="aside">
+      <a href="#">Admin Portal</a>
+      <a href="#">LogIn</a>
+      <a href="#">SignUp</a>
+      <a href="#">User Portal</a>
+      <a href="#">Company Site</a>
+      <a href="#">Company Growth</a>
+      <a href="#">Analytics</a>
+      <a href="#">Product Information</a>
+    </div>
+    <div>
+
+      <form action="#" id="login" class="login show">
+        <p class="heading-secondary">LogIn</p>
+        <span id="error" class="error"></span>
+        <div class="m2 form-grid">
+          <label for="userName">User Name</label>
+          <input type="text" id="userName">
+        </div>
+        <div class="m2 form-grid">
+          <label for="password">Password</label>
+          <input type="password" id="password">
+        </div>
+
+        <button class="submit special" id="submit" onclick="validator()">Submit</button>
+        <button class="viewer visitor" id="viewer" onclick="myFunction()">Viewer</button>
+      </form>
+
+      <div class="container hide" id="user-profile-section">
+
+        <header class="user-designation-details">
+          <p class="heading-primary">Aporve Bhatnagar</p>
+          <p class="user-designation">(Software Developer)</p>
+        </header>
+
+        <div class="grid">
+
+          <div class="user-profesional--details">
+
+            <div class="user-introduction-section m4">
+              <p class="heading-secondary">Introduction</p>
+              <p class="user-introduction">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis esse eius
+                provident aliquam ipsum
+                labore consequuntur, quia asperiores vel nostrum, odit similique distinctio rem eos nam facilis soluta,
+                eum officia itaque. In deserunt qui corporis perferendis sapiente amet suscipit numquam recusandae
+                dolore.
+                Nostrum, doloribus ex excepturi facere blanditiis totam molestias.</p>
+            </div>
+
+
+            <div class="user-profesional-language m4">
+
+              <p class="heading-secondary">Known Language</p>
+              <div class="grid">
+                <div class="language user-fontend--language m2">
+                  <p class="heading-tertiary">Fontend Language</p>
+                  <ul class="language">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                  </ul>
+                </div>
+
+                <div class="language user-database--language m2">
+                  <p class="heading-tertiary">Database Language</p>
+                  <ul class="language">
+                    <li>SQL</li>
+                    <li>Mongo DB</li>
+                  </ul>
+                </div>
+
+                <div class="language user-backend--language m2">
+                  <p class="heading-tertiary">Backend Language</p>
+                  <ul class="language">
+                    <li>NODEJS</li>
+                  </ul>
+                </div>
+
+                <div class="language frameworks--language m2">
+                  <p class="heading-tertiary">Frontend Frameworks</p>
+                  <ul class="language">
+                    <li>SCSS</li>
+                    <li>Bootstrap</li>
+                    <li>ReactJs</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="user-experience m4">
+
+              <div class="user-experience-description m2">
+                <p class="heading-secondary">Experience</p>
+                <p class="user-experience-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias
+                  quam
+                  pariatur quibusdam architecto
+                  quas magnam vitae eum iste ducimus!</p>
+              </div>
+
+              <div class="user-company">
+                <p class="heading-tertiary">Current Comapany</p>
+                <p class="user-company-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, non.s
+                </p>
+                <p class="user-company-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex.</p>
+              </div>
+
+              <div class="user-company">
+                <p class="heading-tertiary">X Comapny</p>
+                <p class="user-company-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis,
+                  neque.
+                </p>
+                <p class="user-company-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex.</p>
+              </div>
+
+            </div>
+
+
+            <div class="projects">
+              <p class="heading-secondary">Projects</p>
+              <div class="project-1">
+                <p class="heading-tertiary">AIA Phillipines</p>
+                <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quasi! Laborum
+                  suscipit reprehenderit officiis atque soluta eos, voluptates inventore voluptatibus eum totam iusto
+                  consectetur dignissimos saepe ipsa provident quod rerum praesentium impedit molestias quibusdam optio
+                  ut
+                  perspiciatis. Voluptatem, vero. Quasi molestias in beatae quis impedit, quas tenetur culpa possimus!
+                  Magnam.</p>
+                <img src="#" alt="" class="project-img">
+              </div>
+
+              <div class="project-2">
+                <p class="heading-tertiary">Coke</p>
+                <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quasi! Laborum
+                  suscipit reprehenderit officiis atque soluta eos, voluptates inventore voluptatibus eum totam iusto
+                  consectetur dignissimos saepe ipsa provident quod rerum praesentium impedit molestias quibusdam optio
+                  ut
+                  perspiciatis. Voluptatem, vero. Quasi molestias in beatae quis impedit, quas tenetur culpa possimus!
+                  Magnam.</p>
+                <img src="#" alt="" class="project-img">
+              </div>
+              <div class="project-3">
+                <p class="heading-tertiary">GSK</p>
+                <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quasi! Laborum
+                  suscipit reprehenderit officiis atque soluta eos, voluptates inventore voluptatibus eum totam iusto
+                  consectetur dignissimos saepe ipsa provident quod rerum praesentium impedit molestias quibusdam optio
+                  ut
+                  perspiciatis. Voluptatem, vero. Quasi molestias in beatae quis impedit, quas tenetur culpa possimus!
+                  Magnam.</p>
+                <img src="#" alt="" class="project-img">
+              </div>
+
+              <div class="project-4">
+                <p class="heading-tertiary">YTL</p>
+                <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quasi! Laborum
+                  suscipit reprehenderit officiis atque soluta eos, voluptates inventore voluptatibus eum totam iusto
+                  consectetur dignissimos saepe ipsa provident quod rerum praesentium impedit molestias quibusdam optio
+                  ut
+                  perspiciatis. Voluptatem, vero. Quasi molestias in beatae quis impedit, quas tenetur culpa possimus!
+                  Magnam.</p>
+                <img src="#" alt="" class="project-img">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="user-personal--detail">
+
+            <div class="user-personal-image">
+              <img src="./img/Screenshot 2022-12-15 192040.jpg" alt="">
+            </div>
+
+            <div class="user-personal-details">
+
+              <div class="m2">
+                <p class="person-details-label">Name</p>
+                <p>Aporve Bhatnagar</p>
+              </div>
+              <div class="m2">
+                <p class="person-details-label">Email</p>
+                <p>abc@gmail.com</p>
+              </div>
+              <div class="m2">
+                <p class="person-details-label">Dob</p>
+                <p>21-09-1996</p>
+              </div>
+              <div class="m2">
+                <p class="person-details-label">Contact number</p>
+                <p>9998887779</p>
+              </div>
+
+              <div class="social-links">
+
+                <div class="m2">
+                  <p class="person-details-label">Gmail ID</p>
+                  <p>abc@gmail.com</p>
+                </div>
+                <div class="m2">
+                  <p class="person-details-label">LinkedIn</p>
+                  <p>abc@linkedin.com</p>
+                </div>
+                <div class="m2">
+                  <p class="person-details-label">Facebook</p>
+                  <p>abc@gmail.com</p>
+                </div>
+                <div class="m2">
+                  <p class="person-details-label">Instagram</p>
+                  <p>abc@gmail.com</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer bottom show" id="footer">
+    <div class="footer-logos">
+      <a href="#">
+        <ion-icon name="logo-facebook" style=" width:24px; height:24px"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-twitter" style=" width:24px; height:24px"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-instagram" style=" width:24px; height:24px"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="logo-youtube" style=" width:24px; height:24px"></ion-icon>
+      </a>
+    </div>
+    <div class="tnc">
+      <p>PRIVACY | TERMS OF USE</p>
+      <P>YOUR INDIAN PRIVACY RIGHTS | CHILDREN ONLINE PRIVACY POLICY</P>
+      <P>INTEREST BASED ADS | DO NOT SALE MY INFO</P>
+      <P>&COPY; 1996-2050 / ALL RIGHTS RESERVED</P>
+    </div>
+  </footer>
+
+
+  <script>
+
+    // if (document.readyState === 'complete') {
+    //   console.log('Loaded~~~~~~~~~~~')
+    //   alert('loaded')
+    // }
+
+    // document.onreadystatechange = () => {
+    //   if (document.readyState === 'complete') {
+    //     console.log('Loaded~~~~~~~~~~~')
+    //     alert('loaded')
+    //   }
+    // };
+
+    function myFunction() {
+      console.log('function')
+      document.getElementById('login').style.display = "none"
+      document.getElementById('user-profile-section').style.display = "block";
+      // document.getElementById('main').style.display = "none"
+      // document.getElementById('footer').style.display = "none"
+
+      let footer = document.getElementById('footer');
+      footer.classList.remove("bottom")
+
+
+    }
+
+    function validator() {
+      console.log('Validator Function');
+      let userName = document.getElementById('userName').value;
+      console.log(userName);
+      let password = document.getElementById('password').value;
+      console.log(password);
+
+      if (userName == 'aporve' && password == "12345") {
+        document.getElementById('error').style.display = "none"
+        document.getElementById('login').style.display = "none"
+        document.getElementById('user-profile-section').style.display = "block";
+        let footer = document.getElementById('footer');
+        footer.classList.remove("bottom");
+
+        let main = document.getElementById('main');
+        main.classList.add("main-addition");
+
+        let aside = document.getElementById("aside");
+        aside.style.display = "block";
+
+        let navMenu = document.getElementById('nav-menu');
+        navMenu.style.display = "block"
+      } else {
+        let error = document.getElementById("error")
+        error.innerHTML = "Please provide all the below details"
+      }
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>

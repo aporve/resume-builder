@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  /* background-color: khaki; */
+}
+
+
+
+
+/* 
+//////////////////////////////////////////
+
+Generic CSS
+
+*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+
+
+.container {
+  width: 120rem;
+  /* height: 100vh; */
+  margin: 0 auto;
+  line-height: 1.6;
+
+  background-color: rgba(136, 136, 136, 0.05);
+  position: relative;
+}
+
+.m2 {
+  margin-bottom: 1.2rem;
+}
+
+.m4 {
+  margin-bottom: 3.6rem;
+}
+
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* 
+Navigation section
+*/
+
+.nav-section {
+
+  padding: 1.8rem;
+  color: #ed9f5a;
+  font-style: sans-sarif;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 1rem;
+}
+
+.nav-menu a:link,
+.nav-menu a:visited {
+  width: 15rem;
+  color: #fff;
+  background-color: #ed9f5a;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.nav-section .nav-grid .user-main-profile {
+  border-radius: 50%;
+  width: 50px;
+  background-color: rgb(208, 199, 199);
+  color: rgb(49, 48, 48);
+}
+
+
+/* 
+//////////////////////////////////////////
+
+Header
+user-designation-details
+*/
+.user-designation-details {
+  line-height: 1.1;
+  padding: 1.2rem;
+  background-color: rgba(136, 136, 136, 0.5);
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.user-designation {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+/* 
+//////////////////////////////////////////
+
+user-profesional--details
+
+*/
+
+.user-profesional--details {
+  padding: 1.2rem;
+}
+
+.user-profesional-language {
+  margin-bottom: 1.2rem;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.user-introduction {
+  font-size: 1.6rem;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+/* .language {
+  list-style: none;
+} */
+
+.language li {
+  margin-left: 1.6rem;
+  font-size: 1.2rem;
+  list-style: square;
+}
+
+.user-experience {
+  font-size: 1.6rem;
+}
+
+.user-company {
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  font-size: 1.6rem;
+}
+
+
+
+
+/* 
+//////////////////////////////////////////
+
+user-details
+
+*/
+
+
+
+.user-personal--detail {
+  background-color: rgba(136, 136, 136, 0.1);
+  padding: 1.6rem;
+}
+
+.user-personal-image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+
+.user-personal-details {
+  font-size: 1.2rem;
+}
+
+.person-details-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+
+
+/* 
+
+Login Form 
+
+*/
+
+
+.login {
+  width: 30%;
+  font-size: 1.6rem;
+  padding: 5rem 1.2rem;
+  text-align: center;
+  /* margin: 15% auto; */
+
+  /* background-color: gray; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.login label {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+
+.login input {
+  outline: none;
+  padding: 1.2rem;
+}
+
+.login button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 1rem 5rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  margin: 1rem 1.2rem;
+  transition: 0.5s;
+  color: rgba(27, 27, 27, 0.692);
+}
+
+.visitor {
+  background-color: #ed9f5a;
+}
+
+#submit {
+  color: #ed9f5a;
+}
+
+#submit:hover {
+  background-color: #ed9f5a;
+  color: #fff;
+}
+
+.visitor:hover {
+  color: #fff;
+  background-color: #f3b178;
+
+}
+
+.error {
+  color: red;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  display: block;
+}
+
+
+/* 
+Main Section
+*/
+
+.main {
+  width: 100%;
+  /* background-color: orange; */
+}
+
+.main-grid {
+  display: grid;
+  /* grid-template-columns: 35.2rem 2fr; */
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.main-addition {
+  grid-template-columns: 35.2rem 2fr;
+}
+
+.main .aside {
+  /* background-color: blue; */
+  border: 1px solid rgba(0, 0, 0, 0.117);
+}
+
+.main div {
+  /* background-color: red; */
+}
+
+.main a:link,
+.main a:visited {
+  display: block;
+  text-decoration: none;
+  color: rgb(16, 16, 16);
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.117);
+  transition: 0.5s;
+}
+
+.main a:hover,
+.main a::after {
+  /* font-size: 1.8rem; */
+  padding: 1.4rem;
+  color: #fff;
+  background-color: #ed9f5a;
+}
+
+
+
+/* footer */
+
+.footer {
+  /* background-color: rgba(146, 145, 145, 0.732); */
+  background-color: #ed9f5a;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1.6rem;
+  letter-spacing: .3rem;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.footer a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 3rem);
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.tnc {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.tnc p {
+  margin-bottom: 1rem;
+}
+
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+primary : #ed9f5a
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+*/
