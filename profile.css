@@ -230,13 +230,15 @@ Login Form
 */
 
 
+
 .login {
+  /* background-image: url("https://yellow.ai/wp-content/themes/yellow.ai/img/seperator-arrow.svg"); */
   width: 30%;
   font-size: 1.6rem;
   padding: 5rem 1.2rem;
   text-align: center;
   /* margin: 15% auto; */
-
+  /* background-repeat: no-repeat; */
   /* background-color: gray; */
 
   position: absolute;
@@ -244,6 +246,22 @@ Login Form
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.login::after {
+  top: 60%;
+  left: 85%;
+  content: "";
+  height: 46px;
+  width: 41.2px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-50%, 0px);
+  -ms-transform: translate(-50%, 0px);
+  transform: translate(-50%, 0px);
+  background-image: url(https://yellow.ai/wp-content/themes/yellow.ai/img/seperator-arrow.svg);
+}
+
 
 .form-grid {
   display: grid;
