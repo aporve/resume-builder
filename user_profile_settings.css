@@ -1,0 +1,47 @@
+.header-secondary-1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.user-profile-details {
+  scroll-behavior: smooth;
+  height: 80rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion {
+
+  background-color: #eee;
+  color: #444;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.panel-form {
+  background-color: rgba(159, 157, 157, 0.808);
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.6rem;
+  display: none;
+}
+
+
+
+
+
+
+/* temperary */
+/* .footer {
+  display: none;
+} */

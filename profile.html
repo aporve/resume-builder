@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="profile.css">
   <title>Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="user_profile_settings.css">
 
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -33,7 +34,7 @@
             </a>
             <div class="nav-profile-settings">
               <a href="#" id="logout" onclick="logout()">Logout</a>
-              <a href="#">User Profile Settings</a>
+              <a href="#" onclick="userProfile()">User Profile Settings</a>
             </div>
           </div>
         </div>
@@ -261,6 +262,39 @@
         </div>
 
       </div>
+
+      <div id="user-profile-settings" class="container user-profile-settings hide">
+        <div class="user-profile-details">
+          <div>
+            <p class="header-secondary-1 accordion">Change User Profile Details</p>
+            <form class="panel-form" action="#">
+              <div>
+                <label for="name">Change Name</label>
+                <input type="text" name="name" id="change_name">
+              </div>
+              <div>
+                <label for="name">Change Password</label>
+                <input id="change_Password" type="password">
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <p class="header-secondary-1 accordion">Change Resume Details</p>
+            <form class="panel-form" action="#">
+              <div>
+                <label for="name">Change Name</label>
+                <input type="text" name="name" id="change_name">
+              </div>
+              <div>
+                <label for="name">Change Password</label>
+                <input id="change_Password" type="password">
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
@@ -301,6 +335,24 @@
     //     alert('loaded')
     //   }
     // };
+
+
+    let acc = document.getElementsByClassName('accordion');
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+      console.log(i, 'i---');
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active")
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      })
+    }
+
 
     function myFunction() {
       console.log('function')
@@ -356,7 +408,14 @@
       let footer = document.getElementById('footer');
       footer.classList.add("bottom");
 
+    }
 
+    function userProfile() {
+      alert('userProfile');
+      document.getElementById('user-profile-section').style.display = "none";
+      document.getElementById('user-profile-settings').style.display = "block";
+      // let footer = document.getElementById('footer');
+      // footer.classList.add("bottom");
     }
 
   </script>
