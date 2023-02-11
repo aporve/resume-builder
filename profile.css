@@ -88,10 +88,17 @@ Navigation section
   display: grid;
   grid-template-columns: 1fr 1fr 1fr auto;
   gap: 1rem;
+  position: relative;
 }
 
-.nav-menu a:link,
-.nav-menu a:visited {
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.nav-anchor:link,
+.nav-anchor:visited {
   width: 15rem;
   color: #fff;
   background-color: #ed9f5a;
@@ -109,6 +116,31 @@ Navigation section
   color: rgb(49, 48, 48);
 }
 
+
+.nav-profile-settings {
+  position: absolute;
+  width: 10rem;
+  height: 250px;
+  top: 3.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s;
+  display: none;
+}
+
+.nav-profile-settings a {
+  display: block;
+  background-color: rgba(173, 173, 173, 0.368);
+  text-decoration: none;
+  color: rgb(22, 22, 22);
+  padding: 1rem;
+}
+
+.dropdown:hover .nav-profile-settings {
+  display: block;
+}
 
 /* 
 //////////////////////////////////////////

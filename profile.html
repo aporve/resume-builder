@@ -20,12 +20,22 @@
       <p class="logo">𝐑𝐄𝐒𝐔𝐌𝐄 𝐁𝐔𝐈𝐋𝐃𝐄𝐑</p>
       <div class="hide" id="nav-menu">
         <div class="nav-menu">
-          <a href="#">Home</a>
-          <a href="#">CV</a>
-          <a href="#">Contact User</a>
-          <a href="#" class="user-main-profile">
+          <a href="#" class="nav-anchor">Home</a>
+          <a href="#" class="nav-anchor">CV</a>
+          <a href="#" class="nav-anchor">Contact User</a>
+          <!-- <a href="#" id="dropdown" class="nav-anchor user-main-profile">
             <ion-icon name="person-outline"></ion-icon>
-          </a>
+          </a> -->
+          <div class="dropdown">
+            <!-- <button class="dropbtn">Dropdown</button> -->
+            <a href="#" id="dropdown" class="dropbtn nav-anchor user-main-profile">
+              <ion-icon name="person-outline"></ion-icon>
+            </a>
+            <div class="nav-profile-settings">
+              <a href="#" id="logout" onclick="logout()">Logout</a>
+              <a href="#">User Profile Settings</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -333,6 +343,21 @@
       }
     }
 
+    function logout() {
+      alert('Do you want to Logout!')
+      let navMenu = document.getElementById('nav-menu');
+      navMenu.style.display = "none"
+      document.getElementById('login').style.display = "block";
+
+      document.getElementById('user-profile-section').style.display = "none";
+      let aside = document.getElementById("aside");
+      aside.style.display = "none";
+
+      let footer = document.getElementById('footer');
+      footer.classList.add("bottom");
+
+
+    }
 
   </script>
 
