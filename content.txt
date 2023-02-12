@@ -1,4 +1,69 @@
-id 
 
 userProfileName
 user-designation
+
+Introduction - introduction
+Introduction details -introduction-details
+Known technology - knownTechnology
+
+frontend Language -language-frontend
+HTML - language-frontend-1
+css - language-frontend-2
+JAVASCRIPT- language-frontend-3
+
+Database  -language-database
+SQL - language-database-1
+Mongo DB -language-database-2
+
+Backend Language- langauge-backend
+NODEJS - langauge-backend-1
+
+Frontend Frameworks - language-fronend-framework
+SCSS - language-fronend-framework-1
+Bootstrap - language-fronend-framework-2
+ReactJs - language-fronend-framework-3
+
+Experience - experienceTitle
+Experience details- experience-details
+Current Company- currentCompany
+current company details - current-company-details
+current company detail 1 - current-company-details-1
+X company - xcompany
+x company details - xCompany-details
+xCompany-details-1
+
+
+Projects - project-title
+Project 1 - Project-1
+Project-1 details - project-1-details
+Project-2 - project-2
+Project-2 details - project-2-details
+project-3 - project-3
+project-3 details - project-3-details
+project-4 - project-4
+project-4-details - project-4-details
+
+
+personal Details 
+Name - name-title
+Aporve Bhatnagar - name-details
+Email - email-title
+abc@gmail.com - email-title-details
+Contact Number - contact-number
+9998887779 - contact-number-details
+Dob - dob
+21-09-1996 - dob-details
+Gmail ID - gmailID-title
+abc@gmail.com - gmailID-details
+Facebook Id - facebook-title
+abc@gmail.com - facebook-details
+LinkedIN Id - linkedIn-title
+abc@linkedin.com - linkedIn-details
+InstagramID - instagram-title
+abc@gmail.com - instagram-details
+
+
+
+
+
+
