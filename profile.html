@@ -73,8 +73,8 @@
       <div class="container hide" id="user-profile-section">
 
         <header class="user-designation-details">
-          <p class="heading-primary">Aporve Bhatnagar</p>
-          <p class="user-designation">(Software Developer)</p>
+          <p class="heading-primary" id="userProfileName">Aporve Bhatnagar</p>
+          <p class="user-designation" id="user-designation">(Software Developer)</p>
         </header>
 
         <div class="grid">
@@ -276,6 +276,7 @@
                 <label for="name">Change Password</label>
                 <input id="change_Password" type="password">
               </div>
+              <button id="submit-user-profile-details">submit Details</button>
             </form>
           </div>
 
@@ -290,6 +291,7 @@
                 <label for="name">Change Password</label>
                 <input id="change_Password" type="password">
               </div>
+              <button>submit Details</button>
             </form>
           </div>
         </div>
@@ -337,6 +339,44 @@
     // };
 
 
+    let obj = {
+      "userProfileData": [
+        {
+          "userProfileName": "Aporve Bhatnager",
+          "userProfileDesignation": "Senior Software Developer"
+        }
+      ],
+      "userProfileDetails": [
+        {
+          "userName": "aporve",
+          "password": "12345"
+        }
+      ]
+    }
+
+
+    let objData = obj.userProfileDetails[0];
+    console.log(objData.userName, 'Object----');
+    console.log(objData.password, 'Object----');
+
+    let userProfileData = obj.userProfileData[0];
+    console.log(userProfileData.userProfileName, "userProfileName");
+
+
+
+    function getId(idName) {
+      let idData = document.getElementById(idName);
+      return idData;
+    }
+
+    (function () {
+      console.log('Self Invoke function')
+      getId('userProfileName').innerHTML = userProfileData.userProfileName;
+      getId('user-designation').innerHTML = userProfileData.userProfileDesignation;
+    })();
+
+
+
     let acc = document.getElementsByClassName('accordion');
     let i;
 
@@ -368,13 +408,14 @@
     }
 
     function validator() {
+      event.preventDefault();
       console.log('Validator Function');
       let userName = document.getElementById('userName').value;
       console.log(userName);
       let password = document.getElementById('password').value;
       console.log(password);
 
-      if (userName == 'aporve' && password == "12345") {
+      if (userName == objData.userName && password == objData.password) {
         document.getElementById('error').style.display = "none"
         document.getElementById('login').style.display = "none"
         document.getElementById('user-profile-section').style.display = "block";
@@ -396,6 +437,7 @@
     }
 
     function logout() {
+      event.preventDefault();
       alert('Do you want to Logout!')
       let navMenu = document.getElementById('nav-menu');
       navMenu.style.display = "none"
@@ -417,6 +459,13 @@
       // let footer = document.getElementById('footer');
       // footer.classList.add("bottom");
     }
+
+
+    let submitUserDeatils = document.getElementById("submit-user-profile-details");
+    submitUserDeatils.addEventListener('click', function (event) {
+      event.preventDefault();
+      alert('wait---');
+    })
 
   </script>
 
