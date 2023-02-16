@@ -188,6 +188,9 @@ function validator() {
   let password = document.getElementById('password').value;
   console.log(password);
 
+  console.log('DB UserName', objData.userName);
+  console.log('DB Password', objData.userName)
+
   if (userName == objData.userName && password == objData.password) {
     document.getElementById('error').style.display = "none"
     document.getElementById('login').style.display = "none"
@@ -217,6 +220,7 @@ function logout() {
   document.getElementById('login').style.display = "block";
 
   document.getElementById('user-profile-section').style.display = "none";
+  document.getElementById('user-profile-settings').style.display = "none";
   let aside = document.getElementById("aside");
   aside.style.display = "none";
 
@@ -237,5 +241,16 @@ function userProfile() {
 let submitUserDeatils = document.getElementById("submit-user-profile-details");
 submitUserDeatils.addEventListener('click', function (event) {
   event.preventDefault();
-  alert('wait---');
+
+  let changedName = getId('change_name');
+  let changedpassword = getId('change_password');
+  alert(changedName.value + 'Details' + changedpassword.value);
+
+  objData.userName = changedName.value;
+  objData.password = changedpassword.value;
+  // console.log(obj);
+  // changedName.reset();
+  // changedpassword.reset();
+  getId("changedLoginDetails").reset();
+  logout();
 })
